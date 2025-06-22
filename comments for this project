@@ -4,34 +4,463 @@ ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
 
 
 
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'java_app'
-    metrics_path: '/actuator/prometheus'
-    static_configs:
-      - targets: ['localhost:8080']
-
-  - job_name: 'node_exporter'
-    static_configs:
-      - targets: ['localhost:9100']
-
-
-
-
-
-
-
-global:
-  scrape_interval: 15s
-
-scrape_configs:
-  - job_name: 'node_exporter'
-    static_configs:
-      - targets: ['localhost:9100']
-
-  - job_name: 'java_app'
-    metrics_path: '/actuator/prometheus'
-    static_configs:
-      - targets: ['localhost:8080']
+ sudo apt update
+   16  sudo apt install -y docker-ce docker-ce-cli containerd.io
+   17  docker --version
+   18  docker ps
+   19  docker ps -a
+   20  docker ps
+   21  ss -tuln
+   22  ps -e
+   23  ps -ef
+   24  ps -aux
+   25  ps aux | grep -i nginx
+   26  kill 7897
+   27  ps aux | grep -i ngnix
+   28  docker ps
+   29  docker ps -a
+   30  ps aux | grep -i nginx
+   31  docker run -d nginx
+   32  docker ps
+   33  docker ps -a
+   34  docker run f743deb737c0
+   35  docker start happy_moore
+   36  docker ps
+   37  docker ps -a
+   38  docker systemctl --prune
+   39  docker run -d ngnix
+   40  docker run -d nginx
+   41  docker ps
+   42  docker stop f743deb737c0
+   43  docker ps
+   44  docker ps -a
+   45  docker start f743deb737c0
+   46  docker ps 
+   47  docker run nginx
+   48  docker system prune -all
+   49  docker system prune --all
+   50  docker ps
+   51  docker system prune --all -y
+   52  docker system prune --all
+   53  docker stop nginx
+   54  docker stop *
+   55  docker stop 913989c3aa8a cb4d6ca7a352 f743deb737c0
+   56  docker ps
+   57  docker ps -a
+   58  docker rm f743deb737c0 cb4d6ca7a352 913989c3aa8a
+   59  docker ps -a
+   60  mkdir doc
+   61  nano docker.txt
+   62  ls
+   63  mv docker.txt /doc
+   64  ls
+   65  cd doc
+   66  ls
+   67  ls -ls
+   68  ls -la
+   69  cd ..
+   70  ls -la
+   71  cd doc
+   72  ls -lrt
+   73  ls -la
+   74  nono docker.txt
+   75  nano docker.txt
+   76  ls 
+   77  ls -la
+   78  cd ..
+   79  ls
+   80  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   81  exit
+   82  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   83  sudo apt-get install openjdk-17-jdk
+   84  java --version
+   85  cd doc
+   86  mvn clean package
+   87  mvn install
+   88  apt install maven
+   89  mvn --version
+   90  ls
+   91  chmod 777 doc
+   92  ls
+   93  cd doc/
+   94  ls
+   95  unzip java-monitoring-app.zip
+   96  ls
+   97  unzip java-monitoring-app.zip
+   98  apt install zip
+   99  unzip java-monitoring-app.zip
+  100  ls
+  101  docker build -t java-monitoring-app .
+  102  docker ps 
+  103  docker build .
+  104  cat docker.txt 
+  105  rm -rf
+  106  vi Dockerfile
+  107  docker build .
+  108  mvn clean install
+  109  ls
+  110  rm docker.txt 
+  111  ls
+  112  cd java-monitoring-app
+  113  ls
+  114  mvn clean install
+  115  ls
+  116  cd ..
+  117  docker build .
+  118  cd java-monitoring-app
+  119  docker build .
+  120  cd ..
+  121  ls
+  122  mv Dockerfile /java-monitoring-app
+  123  ls
+  124  cd java-monitoring-app
+  125  ls
+  126  vi Dockerfile
+  127  docker build .
+  128  docker images
+  129  docker ps
+  130  docker rmi e50d6dfe9056
+  131  docker images
+  132  docker build -t java-monitoring-app .
+  133  docker images
+  134  docker run -d -p 8080:8080 --name java-app java-monitoring-app
+  135  docker ps
+  136  cd ..
+  137  sudo apt install software-properties-common
+  138  sudo apt-add-repository ppa:ansible/ansible
+  139  sudo apt update
+  140  sudo apt install ansible
+  141  ansible --version
+  142  [monitoring]
+  143  monitor.example.com ansible_host=YOUR_SERVER_IP ansible_user=ubuntu ansible_ssh_private_key_file=~/.ssh/id_rsa
+  144  cd doc/
+  145  ls
+  146  cd java-monitoring-app
+  147  ls
+  148  vi inventory_file
+  149  rm inventory_file 
+  150  vi inventory
+  151  vi prometheus_grafana.yml
+  152  mkdir roles
+  153  cd roles
+  154  ls
+  155  mkdir prometheus grafana node_exporter/tasks
+  156  mkdir prometheus grafana node_exporter
+  157  ls
+  158  cd prometheus/
+  159  ls
+  160  mkdir tasks
+  161  cd tasks/
+  162  vi main.yml
+  163  ls
+  164  pwd
+  165  cd /home/ubuntu/doc/java-monitoring-app/roles
+  166  ls
+  167  cd prometheus/tasks/
+  168  cat main.yml 
+  169  rm -rf main.yml 
+  170  ls
+  171  vi main.yml
+  172  ls
+  173  cd /home/ubuntu/doc/java-monitoring-app/roles
+  174  ls
+  175  cd node_exporter/
+  176  ls
+  177  mkdir tasks
+  178  cd tasks/
+  179  vi main.yml
+  180  cd /home/ubuntu/doc/java-monitoring-app/roles/
+  181  ls
+  182  cd grafana/
+  183  ls
+  184  mkdir tasks
+  185  cd tasks/
+  186  vi main.yml
+  187  cd /home/ubuntu/doc/java-monitoring-app/roles/
+  188  cd ..
+  189  ls
+  190  ansible-playbook -i inventory prometheus_grafana.yml
+  191  vi prometheus_grafana.yml 
+  192  vi inventory 
+  193  cd ..
+  194  cd .ssh
+  195  ls
+  196  ssh-keygen -t rsa
+  197  ls
+  198  ls -la
+  199  cd ..
+  200  cd root
+  201  cd ..
+  202  ls
+  203  cd ..sh
+  204  cd .ssh
+  205  cd home/
+  206  ls
+  207  cd ubuntu/
+  208  ls
+  209  cd .ssh
+  210  ls
+  211  cd ..
+  212  ssh-keygen -t rsa
+  213  cd ..
+  214  ls
+  215  cd ..
+  216  ls
+  217  cd root
+  218  ls
+  219  ls -la
+  220  cd .ssh
+  221  ls
+  222  cat id_rsa
+  223  pwd
+  224  cd /home/ubuntu/doc/java-monitoring-app
+  225  ls
+  226  vi inventory 
+  227  ansible-playbook -i inventory prometheus_grafana.yml
+  228  ls
+  229  cat inventory 
+  230  vi inventory 
+  231  ansible-playbook -i inventory prometheus_grafana.yml 
+  232  vi inventory 
+  233  ansible-playbook -i inventory prometheus_grafana.yml 
+  234  cd ..
+  235  cd root
+  236  cd .ssh
+  237  ls
+  238  cat known_hosts 
+  239  ls -lrt
+  240  cd doc/
+  241  ls
+  242  cd java-monitoring-app
+  243  ls
+  244  vi inventory 
+  245  ansible-playbook -i inventory prometheus_grafana.yml 
+  246  vi inventory 
+  247  ansible-playbook -i inventory prometheus_grafana.yml 
+  248  chmod 600 /root/.ssh/id_rsa
+  249  ansible-playbook -i inventory prometheus_grafana.yml 
+  250  cd ..
+  251  ls
+  252  cd java-monitoring-app
+  253  ls
+  254  cd ..
+  255  cd root/.ssh/
+  256  ls
+  257  cd /ubunut
+  258  cd ..
+  259  cd /home/ubuntu/.ssh/
+  260  ls
+  261  nano authorized_keys 
+  262  cat authorized_keys 
+  263  nano authorized_keys 
+  264  cd ..
+  265  cd doc
+  266  ls
+  267  cd java-monitoring-app
+  268  ls
+  269  mkdir ansible-monitoring
+  270  cp prometheus_grafana.yml inventory
+  271  ls
+  272  cd ansible-monitoring/
+  273  ls
+  274  cd ..
+  275  ls
+  276  cp prometheus_grafana.yml /ansible-monitoring
+  277  cd ansible-monitoring/
+  278  ls
+  279  chmod 777 ansible-monitoring
+  280  cd ..
+  281  chmod 777 ansible-monitoring
+  282  cd ansible-monitoring/
+  283  ls
+  284  tree
+  285  ls
+  286  cd ..
+  287  ls -lrt
+  288  rm prometheus_grafana.yml inventory roles
+  289  rm -rf roles/
+  290  ls
+  291  cd ansible-monitoring/ 
+  292  cd ansible-playbook -i inventory prometheus_grafana.yml 
+  293  ansible-playbook -i inventory prometheus_grafana.yml 
+  294  cat inventory 
+  295  ls
+  296  cat inventory 
+  297  cd ..
+  298  ls
+  299  cd ansible-monitoring/
+  300  ansible-playbook -i inventory prometheus_grafana.yml 
+  301  ls
+  302  cat roles/
+  303  cd roles/
+  304  ls
+  305  cd ..
+  306  ls
+  307  cat prometheus_grafana.yml 
+  308  cat inventory 
+  309  ls
+  310  rm -rf inventory 
+  311  ansible-playbook -i inventory prometheus_grafana.yml 
+  312  ansible-playbook -i  prometheus_grafana.yml 
+  313  ansible-playbook -i inventory prometheus_grafana.yml 
+  314  ansible-playbook -i hosts prometheus_grafana.yml 
+  315  ls
+  316  vi prometheus_grafana.yml 
+  317  cd /doc/
+  318  cd doc/
+  319  cd java-monitoring-app
+  320  ls
+  321  cd ansible-monitoring/
+  322  cat prometheus_grafana.yml 
+  323  vi prometheus_grafana.yml 
+  324  ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
+  325  cd ..
+  326  cd root
+  327  cd .ssh
+  328  ls
+  329  cat id_rsa
+  330  cat id_rsa.pub 
+  331  ls
+  332  ansible-inventory --list -i /etc/ansible/hosts
+  333  cd doc/java-monitoring-app
+  334  ls
+  335  cat inventory 
+  336  cat prometheus_grafana.yml 
+  337  ansible-playbook -i inventory prometheus_grafana.yml 
+  338  vi inventory 
+  339  ansible-playbook -i inventory prometheus_grafana.yml 
+  340  cd ..
+  341  cd /etc/
+  342  cd ansible/
+  343  ls
+  344  cat hosts 
+  345  ls
+  346  vi hosts 
+  347  pwd
+  348  ansible-inventory --list -i /etc/ansible/hosts
+  349  cd /doc 
+  350  ls
+  351  cd dev
+  352  cd doc
+  353  ls
+  354  cd java-monitoring-app
+  355  ls
+  356  cd ansible-monitoring/
+  357  ls
+  358  cd prometheus_grafana.yml 
+  359  cat prometheus_grafana.yml 
+  360  cd roles/
+  361  ls
+  362  cd prometheus/
+  363  ls
+  364  cd tasks/
+  365  ls
+  366  cat main.yml 
+  367  ls
+  368  vi main.yml 
+  369  sudo systemctl restart prometheus
+  370  sudo systemctl stop  prometheus
+  371  sudo systemctl start  prometheus
+  372  sudo systemctl status  prometheus
+  373  cd /etc/ansible/
+  374  ls
+  375  ls -lrt
+  376  chmod u+rw hosts
+  377  ls -lrt
+  378  chmod 699 hosts 
+  379  chmod 600 hosts 
+  380  ls -lrt
+  381  vi hosts 
+  382  cd ..
+  383  cd home/ubuntu/
+  384  cd /doc 
+  385  cd doc/
+  386  ls
+  387  cd java-monitoring-app
+  388  ls
+  389  ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
+  390  cd ansible-monitoring/
+  391  ls
+  392  ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
+  393  cd /etc/
+  394  ls 
+  395  cd prometheus/
+  396  ls
+  397  sudo vi prometheus.yml 
+  398  cd ..
+  399  cd ansible/
+  400  ls
+  401  cat hosts 
+  402  vi hosts 
+  403  cat hosts 
+  404  ls
+  405  cd roles/
+  406  cd doc/java-monitoring-app
+  407  ls
+  408  cd ansible-monitoring/
+  409  ansible-playbook
+  410  ansible-playbook -i
+  411  ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
+  412  cd /etc/
+  413  cd ansible/
+  414  ls 
+  415  cd roles/
+  416  ls
+  417  ls -la
+  418  cd ..
+  419  cd hosts
+  420  cat hosts 
+  421  sudo systemctl stop prometheus
+  422  cd ..
+  423  ls
+  424  rm -rf prometheus/
+  425  ls
+  426  cd ..
+  427  ls
+  428  cd /home/ubuntu/
+  429  grep prometheus
+  430  cd ..
+  431  ls
+  432  cd bin
+  433  ls
+  434  cd promethus
+  435  cd ..
+  436  ls
+  437  cd var/lib/
+  438  ls
+  439  rm -rf prometheus/
+  440  ls -lrt
+  441  ls
+  442  cd ..
+  443  ls
+  444  cd ..
+  445  ls
+  446  cd /etc/systemd/
+  447  ls
+  448  cd system
+  449  ls
+  450  rm -rf prometheus.service 
+  451  ls 
+  452  cd ..
+  453  sudo systemctl demon-reload
+  454  sudo systemctl daemon-reload
+  455  cd opt/
+  456  ls
+  457  cd containerd/
+  458  ls
+  459  cd ..
+  460  ls
+  461  kill $(pgrep prometheus)
+  462  ls
+  463  cd doc/
+  464  ls
+  465  cd java-monitoring-app
+  466  ls
+  467  cd ansible-monitoring/
+  468  ansible-playbook -i /etc/ansible/hosts prometheus_grafana.yml
+  469  promethus --version
+  470  docker ps
+  471  docker ps -a
+  472  docker start 12da3432500f 
+  473  docker ps
+  474  history
