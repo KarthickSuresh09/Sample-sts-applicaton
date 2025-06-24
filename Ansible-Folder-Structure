@@ -1,0 +1,10 @@
+ansible-monitoring/
+├── inventory
+├── prometheus_grafana.yml
+├── roles/
+│   ├── prometheus/
+│   │   └── tasks/main.yml
+│   ├── grafana/
+│   │   └── tasks/main.yml
+│   └── node_exporter/
+│       └── tasks/main.yml
