@@ -23,6 +23,6 @@ WORKDIR /app
 COPY --from=builder /app/target/java-monitoring-app-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose Spring Boot default port
-EXPOSE 8080
+EXPOSE 9090
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
