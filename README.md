@@ -1,3 +1,2 @@
 # Sample-sts-applicaton
 
-weui
